@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portofolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <body>
+            <div class="container">
+                <nav aria-label="primary navigation">
+                    <div class="logo" tabindex="0">MyPortofolio</div>
+                    <ul>
+                        <li> <a href="#about">About me</a></li>
+                        <li> <a href="#skills">Skills</a></li>
+                        <li> <a href="#projects">Projects</a></li>
+                        <li> <a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </body>
+    </header>
+    <main class="container" tabindex="0">
+
+    <section id="about" class="about me" aria-label="About me section">
+        <h1> Hallo, Saya <strong>Alizza Pasha fahira</strong></h1>
+        <p>
+            Selamat datang di situsweb portofolio saya! Saya adalah seorang <strong>Murid di SMK Plus Pelita Nusantara</strong>
+            yang senang menggunakan aplikasi web menggunakan <strong>HTML, CSS dan JavaScript</strong>
+        </p>
+        <p>Saya percaya bahwa teknologi adalah alat penting untuk membangun masa depan pendidikan yang lebih baik</p>
+    </section>
+    <section id="skills" aria-label="Skilss sections">
+        <h2>Skills</h2>
+        <div class="skills-list" role="list">
+            <span class="skill" role="listitem">HTML5</span>
+            <span class="skill" role="listitem">CSS3</span>
+            <span class="skill" role="listitem">JavaScript</span>
+        </div>
+    </section>
+    <section id="projects" aria-label="Projects sections">
+    <h2>Projects</h2>
+    <div class="project-list">
+        <article class="project-item" tabindex="0">
+            <h3>Portofolio website</h3>
+            <p>
+                website pribadi yang menampilkan profil, keterampilan, dan proyek. Dibangun menggunakan HTML, CSS dan JavaScript.
+            </p>
+            <a href="#" class="project-link" target="_blank" rel="noopener">Lihat project</a>
+        </article>
+        <article class="project-item" tabindex="0">
+            <h3>To-Do List App</h3>
+            <p>
+                Aplikasi daftar tugas interaktif untuk menambah, menghapus, dan menandai tugas sebagai selesai.
+            </p>
+            <a href="#" class="project-link" target="_blank" rel="noopener">LIhat Project</a>
+        </article>
+        <article class="project-item" tabindex="0">
+            <h3>Quiz Game</h3>
+            <p>
+                Game kuis sederhana dengan pertanyaan pilihan. dibuat dengan javascript.
+            </p>
+            <a href="#" class="project-link" target="_blank"></a>
+        </article>
+    </div>
+    </section>
+    <section id="contact" aria-label="Contact section">
+        <h2>Contact Me</h2>
+        <form action="contact-form" novalidate>
+
+            <label for="name">Nama Lengkap</label>
+            <input type="text" id="name" name="name" placeholder="Nama anda" aria-label="Nama anda" required  />
+            <div class="error" id="name-error"></div>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email anda" aria-label="Email anda" required  />
+            <div class="error" id="email-error"></div>
+
+            <label for="massage">Pesan</label>
+            <textarea id="massage" name="massage" rows="4" placeholder="Tulis Pesan Anda" aria-label= "Pesan anda" required></textarea>
+            <div class="error" id="massage-error"></div>
+
+            <button type="submit" aria-label="Kirim pesan">Kirim pesan</button>
+            <p class="succes-msg" id="succes-massage" aria-label="polite"></p>
+
+        </form>
+    </section>
+    </main>
+    <footer>
+        &copy; 2025 Alizza Pasha Fahira SMK PENUS
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
