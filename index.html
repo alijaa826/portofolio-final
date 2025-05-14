@@ -8,7 +8,6 @@
 </head>
 <body>
     <header>
-        <body>
             <div class="container">
                 <nav aria-label="primary navigation">
                     <div class="logo" tabindex="0">MyPortofolio</div>
@@ -20,7 +19,6 @@
                     </ul>
                 </nav>
             </div>
-        </body>
     </header>
     <main class="container" tabindex="0">
 
@@ -66,27 +64,25 @@
         </article>
     </div>
     </section>
-    <section id="contact" aria-label="Contact section">
-        <h2>Contact Me</h2>
-        <form action="contact-form" novalidate>
+    <section id="contact" aria-label="Contact Section">
+            <h2>🛂 Contact Me</h2>
+            <form action="" id="contact-form" novalidate onsubmit="return handleSubmit(event)">
+                <label for="name">Nama Lengkap</label>
+                <input type="text" id="name" name="name" placeholder="Nama anda" aria-label="Nama Anda" required>
+                <div class="error" id="name-error"></div>
 
-            <label for="name">Nama Lengkap</label>
-            <input type="text" id="name" name="name" placeholder="Nama anda" aria-label="Nama anda" required  />
-            <div class="error" id="name-error"></div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email anda" aria-label="email Anda" required>
+                <div class="error" id="email-error"></div>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Email anda" aria-label="Email anda" required  />
-            <div class="error" id="email-error"></div>
+                <label for="message">Pesan</label>
+                <textarea id="message" name="message" rows="4" placeholder="Tulis pesan anda" aria-label="Pesan Anda" required></textarea>
+                <div class="error" id="message-error"></div>
 
-            <label for="massage">Pesan</label>
-            <textarea id="massage" name="massage" rows="4" placeholder="Tulis Pesan Anda" aria-label= "Pesan anda" required></textarea>
-            <div class="error" id="massage-error"></div>
-
-            <button type="submit" aria-label="Kirim pesan">Kirim pesan</button>
-            <p class="succes-msg" id="succes-massage" aria-label="polite"></p>
-
-        </form>
-    </section>
+                <button type="submit" aria-label="Kirim pesan">💬 Kirim Pesan</button>
+                <p class="success-msg" id="success-message" aria-live="polite"></p>
+            </form>
+          </section>
     </main>
     <footer>
         &copy; 2025 Alizza Pasha Fahira SMK PENUS
