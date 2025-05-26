@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #eef;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .stop-sign {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    clip-path: polygon(
+      30% 0%, 70% 0%, 
+      100% 30%, 100% 70%, 
+      70% 100%, 30% 100%, 
+      0% 70%, 0% 30%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    transition: background-color 0.5s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  

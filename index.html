@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav aria-label="primary navigation">
+        <div class="logo" tabindex="0">MyPortfolio</div>
+        <ul>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" tabindex="0">
+    <section id="about" class="about-me" aria-label="About me section">
+      <h1>Hallo, Saya <strong>Alizza Pasha Fahira</strong></h1>
+      <p>
+        Selamat datang di situs web portofolio saya! Saya adalah seorang <strong>murid di SMK Plus Pelita Nusantara</strong>
+        yang senang menggunakan aplikasi web menggunakan <strong>HTML, CSS, dan JavaScript</strong>.
+      </p>
+      <p>Saya percaya bahwa teknologi adalah alat penting untuk membangun masa depan pendidikan yang lebih baik.</p>
+    </section>
+
+    <section id="skills" aria-label="Skills section">
+      <h2>Skills</h2>
+      <div class="skills-list" role="list">
+        <span class="skill" role="listitem">HTML</span>
+        <span class="skill" role="listitem">CSS</span>
+        <span class="skill" role="listitem">JavaScript</span>
+        <span class="skill" role="listitem">Photoshop</span>
+      </div>
+    </section>
+
+    <section id="projects" aria-label="Projects section">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <article class="project-item" tabindex="0">
+          <h3>Jam Digital</h3>
+          <p>Website yang menampilkan jam, menit, dan waktu pada hari ketika kita membuka website tersebut.</p>
+          <a href="jam digital/jam.html" class="project-link" target="_blank" rel="noopener">Lihat Project</a>
+        </article>
+        <article class="project-item" tabindex="0">
+          <h3>Website Tata Surya</h3>
+          <p>Website yang menampilkan rangkuman materi mengenai isi dari tata surya dan pengertiannya.</p>
+          <a href="besme/planet.html" class="project-link" target="_blank" rel="noopener">Lihat Project</a>
+        </article>
+        <article class="project-item" tabindex="0">
+          <h3>Quote Of The Day</h3>
+          <p>Website yang berisikan kata-kata mutiara yang dapat memotivasi kita agar menjalani hidup dengan semangat</p>
+          <a href="quotes/index.html" class="project-link" target="_blank" rel="noopener">Lihat Project</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" aria-label="Contact section"> 
+      <h2>💬Contact Me </h2> 
+      <form id="contact-form" novalidate> 
+  
+          <label for="name">Nama Lengkap</label> 
+          <input type="text" id="name" name="name" placeholder="Nama Anda" aria-label="Nama Anda" required /> 
+          <div class="error" id="name-error"></div> 
+  
+          <label for="email">Email</label> 
+          <input type="email" id="email" name="email" placeholder="Email Anda" aria-label="Email Anda" required /> 
+          <div class="error" id="email-error"></div> 
+      
+          <label for="message">Pesan</label> 
+          <textarea id="message" name="message" rows="4" placeholder="Tulis pesan Anda..." aria-label="Pesan Anda" required></textarea> 
+          <div class="error" id="message-error"></div> 
+      
+          <button type="submit" aria-label="Kirim pesan"> Kirim Pesan</button> 
+          <p class="success-msg" id="success-message" aria-live="polite"></p> 
+      </form> 
+  </section> 
+  </main>
+
+  <footer>
+    &copy; 2025 Alizza Pasha Fahira
+  </footer>
+
+  <script src="alija.js"></script>
+</body>
+</html>
